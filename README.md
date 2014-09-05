@@ -1,0 +1,2 @@
+node-yahoo-currency-api
+=======================
