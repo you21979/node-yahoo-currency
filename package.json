@@ -1,11 +1,10 @@
 {
   "author": "Yuki Akiyama <you2197901 [at] gmail.com>",
   "name": "yahoo-currency",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "dependencies": {
-    "request-promise" : "0.1.2",
-    "xml2json" : "0.5.1"
+    "request-promise" : "0.2.0"
   },
   "readmeFilename": "README.md",
   "description": "query of yahoo finance api for currency",
