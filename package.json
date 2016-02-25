@@ -4,7 +4,7 @@
   "version": "0.0.10",
   "private": false,
   "dependencies": {
-    "request-promise" : "0.4.x"
+    "limit-request-promise" : "0.0.x"
   },
   "readmeFilename": "README.md",
   "description": "query of yahoo finance api for currency",
