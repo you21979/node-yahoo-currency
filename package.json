@@ -9,7 +9,9 @@
   "readmeFilename": "README.md",
   "description": "query of yahoo finance api for currency",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "promise-util-task" : "0.0.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

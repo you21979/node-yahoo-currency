@@ -1,15 +1,12 @@
 var fx = require('..');
-fx.rate(fx.getSupportPair('USD')).then(function(v){
-    var w = [v];
-    return w;
-}).then(function(w){
-    return fx.rate(fx.getSupportPair('JPY')).then(function(v){
-        w.push(v);
-        return w;
-    });
-}).then(function(w){
-    return fx.rate(fx.getSupportPair('EUR')).then(function(v){
-        w.push(v);
-        return w;
-    });
-}).then(console.log)
+var task = require('promise-util-task');
+var req = function(){
+    var keypairs = ['USD','JPY','EUR'];
+    return task.seq(keypairs.map(function(pair){
+        return function(){ return fx.rate(fx.getSupportPair(pair)) }
+    }))
+}
+
+req().then(function(data){
+    console.log(data);
+})
