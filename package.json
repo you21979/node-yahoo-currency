@@ -10,10 +10,12 @@
   "description": "query of yahoo finance api for currency",
   "main": "index.js",
   "devDependencies": {
+    "bluebird": "",
+    "mocha": "",
     "promise-util-task" : "0.0.x"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/test"
   },
   "repository": {
     "type": "git",
