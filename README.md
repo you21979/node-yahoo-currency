@@ -5,7 +5,7 @@ install
 -------
 
 ```
-npm install yahoo-currency
+npm i yahoo-currency
 ```
 
 License
